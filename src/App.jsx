@@ -110,13 +110,13 @@ function App() {
             }
             {checkAnswers ? 
               <div className='play-again'>
-                <h1 className="title">You scored {correctAnswers} / {quizQuestions.length} correct answers </h1>
+                <h1 className="sub-title">You scored {correctAnswers} / {quizQuestions.length} correct answers </h1>
                 <button className="play-again-button" onClick={startNewQuiz}>Play Again</button>
               </div>
 
             : <button className="play-again-button" onClick={handleCheckAnswers}>Check Answers</button>}
           </>
-        : <div class="loader"></div>
+        : <div className="loader"></div>
       :
         <StartQuiz startNewQuiz={startNewQuiz}/>
       }
